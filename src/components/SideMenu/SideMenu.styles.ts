@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const SideMenuWrapper = styled.aside`
-    border: 1px solid ${props => props.theme.frameColor};
     background-color: ${props => props.theme.menuBackgroundColor};
 `
 
