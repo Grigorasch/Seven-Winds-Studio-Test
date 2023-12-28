@@ -1,15 +1,14 @@
 import styled from "styled-components"
-import TopMenu from "./components/TopMenu/TopMenu"
 import SideMenu from "./components/SideMenu/SideMenu"
-import CurrentWindow from "./components/CurrentWindow/CurrentWindow"
-import { sideMenuSectionsList } from "./components/SideMenu/SideMenu.types"
+import Header from "./components/Header/Header"
+import Main from "./components/Main/Main"
 
 export default function App() {
     return (
         <ControlPanelWrapper>
-            <TopMenu />
-            <SideMenu sectionsList={sideMenuSectionsList} />
-            <CurrentWindow />
+            <Header />
+            <SideMenu />
+            <Main />
         </ControlPanelWrapper>
     )
 }
@@ -17,9 +16,7 @@ export default function App() {
 const ControlPanelWrapper = styled.div`
     display: grid;
     grid-template-columns: 235px 1fr;
-    grid-template-rows: 90px 1fr;
-    gap: 1px;
+    grid-template-rows: 45px 1fr;
     width: 100%;
     height: 100vh;
-    background-color: ${props => props.theme.frameColor};
 `
