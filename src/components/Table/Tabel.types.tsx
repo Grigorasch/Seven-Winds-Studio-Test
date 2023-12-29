@@ -1,0 +1,1 @@
+export type RowData = [number, string, string, string, string, string]
