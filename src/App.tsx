@@ -17,6 +17,7 @@ const ControlPanelWrapper = styled.div`
     display: grid;
     grid-template-columns: 235px 1fr;
     grid-template-rows: 45px 1fr;
-    width: 100%;
+
+    min-width: 100%;
     height: 100vh;
 `
