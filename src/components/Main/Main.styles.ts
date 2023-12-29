@@ -32,7 +32,6 @@ export const Tab = styled.button`
     transition: 0.3s;
 
     &:hover {
-        /* transform: scale(1.05); */
         border-bottom-color: ${props => props.theme.lightTextColor};
     }
 
@@ -42,6 +41,7 @@ export const Tab = styled.button`
 `
 
 export const SectionContainer = styled.section`
+    padding: 10px;
     flex-grow: 1;
     background-color: ${props => props.theme.mainBackgroundColor};
 `
